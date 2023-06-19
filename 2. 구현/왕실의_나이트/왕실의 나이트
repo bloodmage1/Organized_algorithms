@@ -1,0 +1,22 @@
+n=8
+            
+z='a1'
+
+x=(int(ord(z[0])))-(int(ord('a')))+1
+y=int(z[1])
+
+dx=(2,2,-2,-2,1,1,-1,-1)
+dy=(1,-1,1,-1,2,-2,2,-2)
+
+count=0
+
+for i in range(len(dx)):
+    nx=x+dx[i]
+    ny=y+dy[i]
+    if nx<n and nx>1 and ny<n and ny>1:
+        count+=1
+
+print(count)
+
+
+상하좌우의 풀이를 참고해서 푼다.

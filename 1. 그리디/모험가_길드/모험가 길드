@@ -1,0 +1,15 @@
+# 모험가 길드
+# m 에서 m[i]를 m[i] 만큼 뽑은게 아니라  count와 result를 설정하고 count를 증가시키다가 count가 조건을 충족하면, result를 하나 증가시키고 count를 초기화한다.
+
+n=5
+m=[2,3,1,2,2]
+m.sort()
+count=0
+result=0
+
+for i in m:
+    count+=1
+    if count>=i:
+        result+=1
+        count=0
+print(result)

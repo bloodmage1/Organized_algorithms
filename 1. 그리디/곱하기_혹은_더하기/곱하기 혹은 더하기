@@ -1,0 +1,18 @@
+# 곱하기 혹은 더하기
+# 문자열을 곱하면 문자열만 반복된다.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# i를 int로 바꿔주는 작업 중요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+numbers='02984'
+numbers='567'
+result=int(numbers[0])
+
+for i in numbers[1:len(numbers)+1]:
+    num=int(i)
+    print(num)
+    if num==0:
+        result+=num
+    if num==1:
+        result+=num
+    else:
+        result*=num
+print(result)

@@ -1,0 +1,20 @@
+# 첫번째 문자를 상정한 뒤에 0으로 바뀌는 경우와 1로 바뀌는 경우를 구분해 각각의 경우의 조건을 충족했을 시 값을 더해준다.
+
+count0=0
+count1=0
+n='0001100'
+if n[0]==0:
+    count0+=1
+else:
+    count1+=1
+
+for i in range(len(n)-1):
+    if n[i] != n[i+1]:
+        if n[i+1]==1:
+            count1+=1
+        else:
+            n[i+1]==0
+            count0+=1
+        
+print(count1)
+print(count0)
